@@ -1,0 +1,10 @@
+<h1>Standings</h1>
+
+<ul>
+  <li *ngFor="let record of records$">
+    <ul>
+      <li><strong>{{ record.name }}</strong></li>
+      <li>{{ record.record }}</li>
+    </ul>
+  </li>
+</ul>

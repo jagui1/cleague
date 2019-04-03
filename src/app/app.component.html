@@ -1,9 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Coming Soon: {{ title }}!
-  </h1>
+<div id="container">
+  <app-sidebar></app-sidebar>
+
+  <div id="content">
+    <h1>
+      Coming Soon: {{ title }}!
+    </h1>
+    <router-outlet></router-outlet>
+  </div>
 </div>
-
-
-<router-outlet></router-outlet>
