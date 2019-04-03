@@ -9,6 +9,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getRecords(){
-    return this.http.get('assets/records.json')
+    return this.http.get('../assets/records.json')
   }
 }

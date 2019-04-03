@@ -38,6 +38,7 @@ export class StandingsComponent implements OnInit {
     this.data.getRecords().subscribe(
       res => this.records$ = res
     );
+    console.log(this.records$);
   }
 
 }
