@@ -1,10 +1,11 @@
 <h1>Standings</h1>
 
-<ul>
-  <li *ngFor="let record of records$">
-    <ul>
-      <li><strong>{{ record.team }}</strong></li>
-      <li>{{ record.record }}</li>
-    </ul>
-  </li>
+<ul [@listStagger]="records$">
+    <li *ngFor="let record of records$">
+      <a routerLink="/details/{{ record.id }}">{{ record.team }}</a>
+      <ul>
+          <li>{{ record.record }}</li>
+          <li>{{ record.scores }}</li>
+      </ul>
+    </li>
 </ul>

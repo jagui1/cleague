@@ -35,10 +35,10 @@ export class StandingsComponent implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.getRecords().subscribe(
+    this.data.getTeams().subscribe(
       res => this.records$ = res
     );
-    console.log(this.records$);
+    
   }
 
 }

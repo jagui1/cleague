@@ -8,7 +8,11 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getRecords(){
-    return this.http.get('../assets/records.json')
+  getTeams(){
+    return this.http.get('../assets/json/records.json')
+  }
+
+  getTeam(teamId){
+    return this.http.get('../assets/json/records.json?id='+teamId)
   }
 }
