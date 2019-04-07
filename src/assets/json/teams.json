@@ -1,38 +1,38 @@
 [
     {
-          "id": 1,
+          "id": "PRF",
           "team": "The Professors",
           "record": ["L", "W", "W", "L", "L", "W", "W"],
-          "scores": [54,69,71,49,92]
+          "scores": [55,54,69,71,49,92]
       },
       {
-          "id": 2,
+          "id": "ABL",
           "team": "The Airballers",
           "record": ["W", "W", "L", "L", "W", "L", "L"],
-          "scores": [61,54,56,79,89]
+          "scores": [84,61,54,56,79,89]
       },
       {
-          "id": 3,
+          "id": "PRG",
           "team": "The Pretengineers",
           "record": ["W", "L", "W", "W", "W", "W", "L"],
-          "scores": [46,53,59,72,83]
+          "scores": [61,46,53,59,72,83]
       },
       {
-          "id": 4,
+          "id": "MBD",
           "team": "Minor Bodies",
           "record": ["L", "L", "L", "W", "L", "L", "W"],
-          "scores": [54,58,58,55,50]
+          "scores": [34,54,58,58,55,50]
       },
       {
-          "id": 5,
+          "id": "BRK",
           "team": "Bricklayers Union",
           "record": ["L", "L", "L", "L", "L", "L", "L"],
-          "scores": [44,35,50,59,48]
+          "scores": [42,44,35,50,59,48]
       },
       {
-          "id": 6,
+          "id": "PRC",
           "team": "The Process",
           "record": ["W", "W", "W", "W", "W", "W", "W"],
-          "scores": [58,62,90,68,65]
+          "scores": [57,58,62,90,68,65]
       }
   ]

@@ -1,0 +1,7 @@
+{
+    "id": "ABL",
+    "team": "The Airballers",
+    "record": ["W", "W", "L", "L", "W", "L", "L"],
+    "scores": [84,61,54,56,79,89],
+    "players": ["Barrett", "Jeremy", "Rishi", "Steven", "Matt", "Mike"]
+}
