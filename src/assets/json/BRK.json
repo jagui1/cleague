@@ -1,7 +1,6 @@
 {
     "id": "BRK",
     "team": "Bricklayers Union",
-    "record": ["L", "L", "L", "L", "L", "L", "L"],
-    "scores": [42,44,35,50,59,48],
+    "scores": [42,44,35,50,59,48,70],
     "players": ["David", "Nathan", "Scott", "Ben", "Matt", "Shayne"]
 }

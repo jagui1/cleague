@@ -1,7 +1,6 @@
 {
     "id": "MBD",
     "team": "Minor Bodies",
-    "record": ["L", "L", "L", "W", "L", "L", "W"],
-    "scores": [34,54,58,58,55,50],
+    "scores": [34,54,58,58,55,50,77],
     "players": ["David", "Nathan", "Scott", "Ben", "Matt", "Shayne"]
 }
