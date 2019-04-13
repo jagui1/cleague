@@ -1,8 +1,9 @@
-<div *ngIf='team$'>
-    <h1>{{ team$.team }}</h1>
+<div *ngIf='team'>
+    <h1>{{ team.team }}</h1>
   
     <ul>
-      <li><strong>Record:</strong> {{ team$.record }}</li>
-      <li><strong>Scores:</strong> {{ team$.scores }}</li>
+      <li><strong>Scores:</strong> {{ team.scores }} </li>
+      <li><strong>Players:</strong> {{ team.players }} </li>
+      <li><strong>Average Points:</strong> {{ team.avgPts | number }} </li>
     </ul>
-  </div>
+</div>

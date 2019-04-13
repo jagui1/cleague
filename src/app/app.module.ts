@@ -7,6 +7,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { DetailsComponent } from './details/details.component';
 import { StandingsComponent } from './standings/standings.component';
 import { PlayoffsComponent } from './playoffs/playoffs.component';
+import { DataTableModule } from 'primeng/primeng';
+import { TableModule } from 'primeng/table';
 
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,7 +25,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DataTableModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

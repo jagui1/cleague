@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from "@angular/router";
 import { DataService } from '../data.service';
 import { Observable } from 'rxjs';
-import { ActivatedRoute } from "@angular/router";
+import { Team } from '../entities/Team';
 
 @Component({
   selector: 'app-details',
@@ -10,8 +11,9 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class DetailsComponent implements OnInit {
 
-  team$: Object;
+  team: Team;
   teamId: number;
+  
 
   constructor(private route: ActivatedRoute, private data: DataService) { 
     this.route.params.subscribe( params => this.teamId = params.id );
@@ -19,7 +21,7 @@ export class DetailsComponent implements OnInit {
 
  ngOnInit() {
    this.data.getTeam(this.teamId).subscribe(
-     res => this.team$ = res 
+     res => this.team = new Team(res.id, res.team, res.scores, res.players)
    );
  }
 }

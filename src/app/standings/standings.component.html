@@ -1,11 +1,26 @@
-<h1>Standings</h1>
+<h1>{{ title }}</h1>
 
-<ul [@listStagger]="records$">
-    <li *ngFor="let record of records$">
-      <a routerLink="/details/{{ record.id }}">{{ record.team }}</a>
-      <ul>
-          <li>{{ record.record }}</li>
-          <li>{{ record.scores }}</li>
-      </ul>
-    </li>
-</ul>
+  <p-table [value]="teams$" sortField="seed" sortOrder="1">
+     <ng-template pTemplate="header">
+          <tr>
+              <th>Seed</th>
+              <th>Team</th>
+              <th>Wins</th>
+              <th>Losses</th>
+              <th>Points For</th>
+              <th>Points Against</th>
+              <th>Streak</th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-team>
+          <tr class="body">
+              <td>{{ team.seed }}</td>
+              <td><a routerLink="/details/{{ team.id }}">{{team.team}}</a></td>
+              <td>{{ getWins(team.record) }}</td>
+              <td>{{ getLosses(team.record) }}</td>
+              <td>{{ totalPoints(team.scores) }}</td>
+              <td>{{ totalPoints(team.against) }}</td>
+              <td>{{ team.streak }}</td>
+          </tr>
+      </ng-template>
+  </p-table>
