@@ -1,0 +1,62 @@
+[
+    {
+        "seed": 3,
+        "id": "PRF",
+        "team": "The Professors",
+        "opponent": ["ABL","BRK","MBD","PRC","PRG","ABL","BRK"],
+        "scores": [55,54,69,71,49,92,80],
+        "against": [84,44,58,90,72,89,70],
+        "record": ["L", "W", "W", "L", "L", "W", "W"],
+        "streak": "W2"
+    },
+    {
+        "seed": 4,
+        "id": "ABL",
+        "team": "The Airballers",
+        "opponent": ["PRF","MBD","PRC","PRG","BRK","PRF","MBD"],
+        "record": ["W", "W", "L", "L", "W", "L", "L"],
+        "scores": [84,61,54,56,79,89,76],
+        "against": [55,54,62,59,59,92,77],
+        "streak": "L2"
+    },
+    {
+        "seed": 2,
+        "id": "PRG",
+        "team": "The Pretengineers",
+        "opponent": ["MBD","PRC","BRK","ABL","PRF","MBD","PRC"],
+        "scores": [61,46,53,59,72,83,40],
+        "against": [34,58,35,56,49,50,48],
+        "record": ["W", "L", "W", "W", "W", "W", "L"],
+        "streak": "L1"
+    },
+    {
+        "seed": 5,
+        "id": "MBD",
+        "team": "Minor Bodies",
+        "opponent": ["PRG","ABL","PRF","BRK","PRC","PRG","ABL"],
+        "scores": [34,54,58,58,55,50,77],
+        "against": [61,61,69,50,68,83,76],
+        "record": ["L", "L", "L", "W", "L", "L", "W"],
+        "streak": "W1"
+    },
+    {
+        "seed": 6,
+        "id": "BRK",
+        "team": "Bricklayers Union",
+        "opponent": ["PRC","PRF","PRG","MBD","ABL","PRC","PRF"],
+        "scores": [42,44,35,50,59,48,70],
+        "against": [57,54,53,58,79,65,80],
+        "record": ["L", "L", "L", "L", "L", "L", "L"],
+        "streak": "L7"
+    },
+    {
+        "seed": 1,
+        "id": "PRC",
+        "team": "The Process",
+        "opponent": ["BRK","PRG","ABL","PRF","MBD","BRK","PRG"],
+        "scores": [57,58,62,90,68,65,48],
+        "against": [42,46,54,71,55,48,40],
+        "record": ["W", "W", "W", "W", "W", "W", "W"],
+        "streak": "W7"
+    }
+  ]
