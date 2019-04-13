@@ -15,7 +15,7 @@
       <ng-template pTemplate="body" let-team>
           <tr class="body">
               <td>{{ team.seed }}</td>
-              <td><a routerLink="/details/{{ team.id }}">{{team.team}}</a></td>
+              <td><a>{{team.team}}</a></td>
               <td>{{ getWins(team.record) }}</td>
               <td>{{ getLosses(team.record) }}</td>
               <td>{{ totalPoints(team.scores) }}</td>
