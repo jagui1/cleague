@@ -58,5 +58,15 @@
         "against": [42,46,54,71,55,48,40],
         "record": ["W", "W", "W", "W", "W", "W", "W"],
         "streak": "W7"
+    },
+    {
+        "seed": 0,
+        "id": "TST",
+        "team": "The Test",
+        "opponent": ["BRK","PRG","ABL","PRF","MBD","BRK","PRG"],
+        "scores": [57,58,62,90,68,65,48],
+        "against": [42,46,54,71,55,48,40],
+        "record": ["W", "W", "W", "W", "W", "W", "W"],
+        "streak": "W7"
     }
   ]
