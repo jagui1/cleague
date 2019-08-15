@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Observable } from 'rxjs';
-import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
-import {TableModule} from 'primeng/table';
-import {AccordionModule} from 'primeng/accordion';
-import {MenuItem} from 'primeng/api';
-import {OrderListModule} from 'primeng/components/orderlist/orderlist';
+import { TableModule } from 'primeng/table';
+import { Team } from '../entities/Team';
 
 @Component({
   selector: 'app-standings',
@@ -14,30 +11,26 @@ import {OrderListModule} from 'primeng/components/orderlist/orderlist';
 })
 export class StandingsComponent implements OnInit {
 
-  teams$: Object;
-  cols: any[];
+  teams: Team[];
   title: string;
 
   constructor(private data: DataService) { }
+
 
   ngOnInit() {
     this.title = "C League Standings";
     this.data.getTeams().subscribe(
       res => {
-        this.teams$ = res;
+        let tmpTeams = [];
+        for(let i=0; i< res.length; i++){
+          let tmp = res[i];
+          tmpTeams.push(
+            new Team(tmp.seed, tmp.id, tmp.team, tmp.opponent,
+            tmp.scores, tmp.against, tmp.record, tmp.streak, tmp.players)
+          )
+        }
+        this.teams = tmpTeams == null ? [] : tmpTeams;
       }
     );
-  }
-
-  getWins(record: string[]) : number{
-    return record.filter(function(x){return x=='W'}).length;
-  }
-
-  getLosses(record: string[]) : number{
-    return record.filter(function(x){return x=='L'}).length;
-  }
-
-  totalPoints(scores: number[]) : number {
-    return scores.reduce((sum, num) => sum + num, 0);
   }
 }

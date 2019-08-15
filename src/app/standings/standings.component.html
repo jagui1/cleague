@@ -1,26 +1,37 @@
 <h1>{{ title }}</h1>
 
-  <p-table [value]="teams$" sortField="seed" sortOrder="1">
-     <ng-template pTemplate="header">
-          <tr>
-              <th>Seed</th>
-              <th>Team</th>
-              <th>Wins</th>
-              <th>Losses</th>
-              <th>Points For</th>
-              <th>Points Against</th>
-              <th>Streak</th>
-          </tr>
-      </ng-template>
-      <ng-template pTemplate="body" let-team>
-          <tr class="body">
-              <td>{{ team.seed }}</td>
-              <td><a>{{team.team}}</a></td>
-              <td>{{ getWins(team.record) }}</td>
-              <td>{{ getLosses(team.record) }}</td>
-              <td>{{ totalPoints(team.scores) }}</td>
-              <td>{{ totalPoints(team.against) }}</td>
-              <td>{{ team.streak }}</td>
-          </tr>
-      </ng-template>
-  </p-table>
+<p-table [value]="teams" sortField="seed" sortOrder="1">
+    <ng-template pTemplate="colgroup">
+        <colgroup>
+            <col [style.width]="'50px'">
+            <col [style.width]="'105px'">
+            <col [style.width]="'55px'">
+            <col [style.width]="'60px'">
+            <col [style.width]="'60px'">
+            <col [style.width]="'70px'">
+            <col [style.width]="'60px'">
+        </colgroup>
+    </ng-template>
+    <ng-template pTemplate="header">
+        <tr>
+            <th [pSortableColumn]="'seed'">Seed</th>
+            <th [pSortableColumn]="'team'">Team</th>
+            <th [pSortableColumn]="'wins'">Wins</th>
+            <th [pSortableColumn]="'losses'">Losses</th>
+            <th [pSortableColumn]="'ptsFor'">Points For</th>
+            <th [pSortableColumn]="'ptsAgainst'">Points Against</th>
+            <th [pSortableColumn]="'streak'">Streak</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-team>
+        <tr class="body">
+            <td>{{ team.seed }}</td>
+            <td><a routerLink="/details/{{ team.id }}">{{team.team}}</a></td>
+            <td>{{ team.wins }}</td>
+            <td>{{ team.losses }}</td>
+            <td>{{ team.ptsFor }}</td>
+            <td>{{ team.ptsAgainst }}</td>
+            <td>{{ team.streak }}</td>
+        </tr>
+    </ng-template>
+</p-table>

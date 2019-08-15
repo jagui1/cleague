@@ -5,9 +5,15 @@
         "team": "The Professors",
         "opponent": ["ABL","BRK","MBD","PRC","PRG","ABL","BRK"],
         "scores": [55,54,69,71,49,92,80],
+        "avgPts": 0,
+        "ptsFor": 0,
         "against": [84,44,58,90,72,89,70],
+        "ptsAgainst": 0,
         "record": ["L", "W", "W", "L", "L", "W", "W"],
-        "streak": "W2"
+        "wins": 0,
+        "losses": 0,
+        "streak": "W2",
+        "players": ["Zabi", "Justice", "Ernesto", "Donald", "Darrell", "Stefan", "Derek"]
     },
     {
         "seed": 4,
@@ -15,9 +21,16 @@
         "team": "The Airballers",
         "opponent": ["PRF","MBD","PRC","PRG","BRK","PRF","MBD"],
         "record": ["W", "W", "L", "L", "W", "L", "L"],
+        "wins": 0,
+        "losses": 0,
         "scores": [84,61,54,56,79,89,76],
+        "avgPts": 0,
+        "ptsFor": 0,
         "against": [55,54,62,59,59,92,77],
-        "streak": "L2"
+        "ptsAgainst": 0,
+        "streak": "L2",
+        "players": ["Barrett", "Jeremy", "Rishi", "Steven", "Matt", "Mike"]
+
     },
     {
         "seed": 2,
@@ -25,9 +38,15 @@
         "team": "The Pretengineers",
         "opponent": ["MBD","PRC","BRK","ABL","PRF","MBD","PRC"],
         "scores": [61,46,53,59,72,83,40],
+        "avgPts": 0,
+        "ptsFor": 0,
         "against": [34,58,35,56,49,50,48],
+        "ptsAgainst": 0,
         "record": ["W", "L", "W", "W", "W", "W", "L"],
-        "streak": "L1"
+        "wins": 0,
+        "losses": 0,
+        "streak": "L1",
+        "players": ["Mitch", "Bryant", "Richie", "Steve T", "Steve S", "Corey", "Peter"]
     },
     {
         "seed": 5,
@@ -35,9 +54,15 @@
         "team": "Minor Bodies",
         "opponent": ["PRG","ABL","PRF","BRK","PRC","PRG","ABL"],
         "scores": [34,54,58,58,55,50,77],
+        "avgPts": 0,
+        "ptsFor": 0,
         "against": [61,61,69,50,68,83,76],
+        "ptsAgainst": 0,
         "record": ["L", "L", "L", "W", "L", "L", "W"],
-        "streak": "W1"
+        "wins": 0,
+        "losses": 0,
+        "streak": "W1",
+        "players": ["Dan", "Jason", "Tom", "Zach", "Edwin", "Emmanuel", "John", "Joe", "Kwame"]
     },
     {
         "seed": 6,
@@ -45,9 +70,15 @@
         "team": "Bricklayers Union",
         "opponent": ["PRC","PRF","PRG","MBD","ABL","PRC","PRF"],
         "scores": [42,44,35,50,59,48,70],
+        "avgPts": 0,
+        "ptsFor": 0,
         "against": [57,54,53,58,79,65,80],
+        "ptsAgainst": 0,
         "record": ["L", "L", "L", "L", "L", "L", "L"],
-        "streak": "L7"
+        "wins": 0,
+        "losses": 0,
+        "streak": "L7",
+        "players": ["David", "Nathan", "Scott", "Ben", "Matt", "Shayne"]
     },
     {
         "seed": 1,
@@ -55,8 +86,14 @@
         "team": "The Process",
         "opponent": ["BRK","PRG","ABL","PRF","MBD","BRK","PRG"],
         "scores": [57,58,62,90,68,65,48],
+        "avgPts": 0,
+        "ptsFor": 0,
         "against": [42,46,54,71,55,48,40],
+        "ptsAgainst": 0,
         "record": ["W", "W", "W", "W", "W", "W", "W"],
-        "streak": "W7"
+        "wins": 0,
+        "losses": 0,
+        "streak": "W7",
+        "players": ["Jay", "Bob", "Calvin", "Joey","Jeff"]
     }
   ]
