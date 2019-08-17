@@ -1,0 +1,27 @@
+<div class="ngtt-de__container">
+  <div class="ngtt-se__bracket-wrapper">
+    <ng-container *ngFor="let winnersround of winnersBracket; let i = index">
+      <div class="ngtt-se__round-wrapper">
+        <ng-container *ngFor="let match of winnersround.matches">
+          <div class="ngtt-se__match-wrapper">
+            <ng-container *ngIf="i === (winnersBracket.length - 1)">
+              <div class="ngtt-se__finale-match-wrapper">
+                <div class="ngtt-se__finale-component-container">
+                  <ng-container *ngTemplateOutlet="matchTemplate; context:{$implicit: match}"></ng-container>
+                </div>
+                <div class="ngtt-se__match-component-container">
+                  <ng-container *ngTemplateOutlet="matchTemplate; context:{$implicit: match}"></ng-container>
+                </div>
+              </div>
+            </ng-container>
+            <ng-container *ngIf="i < (winnersBracket.length - 1)">
+              <div class="ngtt-se__match-component-container">
+                <ng-container *ngTemplateOutlet="matchTemplate; context:{$implicit: match}"></ng-container>
+              </div>
+            </ng-container>
+          </div>
+        </ng-container>
+      </div>
+    </ng-container>
+  </div>
+</div>

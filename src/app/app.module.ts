@@ -13,13 +13,19 @@ import { TableModule } from 'primeng/table';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { NgTournamentTreeModule } from 'ng-tournament-tree';
+import { SingleEliminationTreeComponent } from './single-elimination-tree/single-elimination-tree.component';
+import { MyMatchComponent } from './my-match/my-match.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     DetailsComponent,
     StandingsComponent,
-    PlayoffsComponent
+    PlayoffsComponent,
+    SingleEliminationTreeComponent,
+    MyMatchComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +33,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     BrowserAnimationsModule,
     DataTableModule,
-    TableModule
+    TableModule,
+    NgTournamentTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
