@@ -15,17 +15,17 @@ export class PlayoffsComponent implements OnInit {
 
   ngOnInit() {
     this.myTournamentData = {
-      tournament: 'Counter Strike Go',
+      tournament: 'C League Playoffs 2019',
       rounds: [
         {
           round: '1.0',
           type: 'winnerbracket',
           matches: [
             {
-              teams: [{name: 'Team  A', score: 2}, {name: 'Team  B', score: 2}]
+              teams: [{name: 'The Airballers', score: 46}, {name: 'Minor Bodies', score: 76}]
             },
             {
-              teams: [{name: 'Team  C', score: 2}, {name: 'Team  D', score: 2}]
+              teams: [{name: 'The Professors', score: 49}, {name: 'Bricklayers Union', score: 38}]
             },
           ]
         }, 
@@ -34,10 +34,10 @@ export class PlayoffsComponent implements OnInit {
           type: 'winnerbracket',
           matches: [
             {
-              teams: [{name: 'Team  B', score: 1}, {name: 'Team  D', score: 2}]
+              teams: [{name: 'The Process', score: 68}, {name: 'Minor Bodies', score: 78}]
             },
             {
-              teams: [{name: 'Team  F', score: 1}, {name: 'Team  H', score: 2}]
+              teams: [{name: 'The Pretengineers', score: 56}, {name: 'The Professors', score: 60}]
             }
           ]
         },
@@ -48,12 +48,12 @@ export class PlayoffsComponent implements OnInit {
             {
               teams: [
                 {
-                  name: 'Team  F',
-                  score: 1
+                  name: 'Minor Bodies',
+                  score: 0
                 },
                 {
-                  name: 'Team  B',
-                  score: 3
+                  name: 'The Professors',
+                  score: 1
                 }
               ]
             }

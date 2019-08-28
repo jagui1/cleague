@@ -1,12 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../node_modules/primeng/resources/primeng.min.css';
 @import '../node_modules/primeng/resources/themes/luna-blue/theme.css';
-// @import '~ng-tournament-tree/styles/ngtt-styles';
+@import '~ng-tournament-tree/styles/ngtt-styles';
 
 @font-face {
 	font-family: 'nbaFont';
 	src: url('./assets/fonts/HorribleJefe.ttf')
          format('opentype');
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
 }
 
 body {
